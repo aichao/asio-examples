@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:serial_port_stream_processor/serial_port_stream_processor.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:tcp_streamer/tcp_streamer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:tcp_stream_processor/tcp_stream_processor.xcodeproj">
+   </FileRef>
+</Workspace>

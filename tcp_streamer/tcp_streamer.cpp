@@ -15,9 +15,9 @@ int main(int argc, char* argv[]) {
   tcp::socket s(io_service);
   boost::asio::connect(s, iterator);
 
-  boost::array<double, N> data;
+  boost::array<double, M> data;
   for (int i = 0; i < data.size(); ++i) data[i] = i + 1;
-  boost::asio::write(s, boost::asio::buffer(data, N * sizeof(double)));
+  boost::asio::write(s, boost::asio::buffer(data, M * sizeof(double)));
 
   return 0;
 }

@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		960DA8341D30A2F000244E2C /* tcp_streamer in CopyFiles */ = {isa = PBXBuildFile; fileRef = 960DA8291D30A00A00244E2C /* tcp_streamer */; };
+		960DA83A1D31E7C900244E2C /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960DA8391D31E7C900244E2C /* libboost_system.a */; };
+		966D74D81D355D2000E4369C /* tcp_streamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 966D74D71D355D2000E4369C /* tcp_streamer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		960DA8271D30A00A00244E2C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "/Users/aichao/MIA/Projects/asio-examples/build/bin";
+			dstSubfolderSpec = 0;
+			files = (
+				960DA8341D30A2F000244E2C /* tcp_streamer in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		960DA8291D30A00A00244E2C /* tcp_streamer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tcp_streamer; sourceTree = BUILT_PRODUCTS_DIR; };
+		960DA8391D31E7C900244E2C /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../../../../../Shared/Tools/boost_1_61_0/stage/lib/libboost_system.a; sourceTree = "<group>"; };
+		966D74D71D355D2000E4369C /* tcp_streamer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcp_streamer.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		960DA8261D30A00A00244E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960DA83A1D31E7C900244E2C /* libboost_system.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		960DA81E1D309FE200244E2C = {
+			isa = PBXGroup;
+			children = (
+				960DA8311D30A01F00244E2C /* Libraries */,
+				960DA82B1D30A00A00244E2C /* src */,
+				960DA82A1D30A00A00244E2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		960DA82A1D30A00A00244E2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				960DA8291D30A00A00244E2C /* tcp_streamer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		960DA82B1D30A00A00244E2C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				966D74D71D355D2000E4369C /* tcp_streamer.cpp */,
+			);
+			name = src;
+			path = stream_sender;
+			sourceTree = "<group>";
+		};
+		960DA8311D30A01F00244E2C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				960DA8391D31E7C900244E2C /* libboost_system.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		960DA8281D30A00A00244E2C /* tcp_streamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960DA82E1D30A00B00244E2C /* Build configuration list for PBXNativeTarget "tcp_streamer" */;
+			buildPhases = (
+				960DA8251D30A00A00244E2C /* Sources */,
+				960DA8261D30A00A00244E2C /* Frameworks */,
+				960DA8271D30A00A00244E2C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tcp_streamer;
+			productName = stream_sender;
+			productReference = 960DA8291D30A00A00244E2C /* tcp_streamer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		960DA81F1D309FE200244E2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					960DA8281D30A00A00244E2C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 960DA8221D309FE200244E2C /* Build configuration list for PBXProject "tcp_streamer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 960DA81E1D309FE200244E2C;
+			productRefGroup = 960DA82A1D30A00A00244E2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				960DA8281D30A00A00244E2C /* tcp_streamer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		960DA8251D30A00A00244E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966D74D81D355D2000E4369C /* tcp_streamer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		960DA8231D309FE200244E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/Shared/Tools/boost_1_61_0,
+				);
+			};
+			name = Debug;
+		};
+		960DA8241D309FE200244E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/Shared/Tools/boost_1_61_0,
+				);
+			};
+			name = Release;
+		};
+		960DA82F1D30A00B00244E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Shared/Tools/boost_1_53_0/stage/lib,
+					/Users/Shared/Tools/boost_1_61_0/stage/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = tcp_streamer;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		960DA8301D30A00B00244E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Shared/Tools/boost_1_53_0/stage/lib,
+					/Users/Shared/Tools/boost_1_61_0/stage/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = tcp_streamer;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		960DA8221D309FE200244E2C /* Build configuration list for PBXProject "tcp_streamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960DA8231D309FE200244E2C /* Debug */,
+				960DA8241D309FE200244E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960DA82E1D30A00B00244E2C /* Build configuration list for PBXNativeTarget "tcp_streamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960DA82F1D30A00B00244E2C /* Debug */,
+				960DA8301D30A00B00244E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 960DA81F1D309FE200244E2C /* Project object */;
+}
