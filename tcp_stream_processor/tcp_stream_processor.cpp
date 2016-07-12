@@ -183,6 +183,10 @@ class SerialConnection {
                                          &io_service_));
   }
 
+  void stop() {
+    io_service_.stop();
+  }
+
   void joinThreads() {
     threads_.join_all();
   }
@@ -221,7 +225,7 @@ int main(int argc, char* argv[]) {
   // I'm running OS X and this is an OS X ephemeral port
   const short port = 49162;
   // I set this small for testing, for spectral analysis this may be large
-  const std::size_t N = 32;
+  const std::size_t N = 64;
   // Construct the SerialConnection, which initiates the async accept
   SerialConnection serialConn(port, N);
   // Run the io_service on the pool of threads
@@ -229,6 +233,14 @@ int main(int argc, char* argv[]) {
 
   // At this point the main thread is free to execute whatever it wants,
   // including possibly entering into a UI event loop.
+
+  // For this example, when the tcp_streamer finishes streaming its data,
+  // it exits and closes its socket connection to this application. This
+  // causes async_read_some to return an error. Since we are not handling 
+  // this error, SerialHAndler::AsyncReadSome is not called again in 
+  // SerialHandler::HandlePortOnReceive. Consequently, all handlers are 
+  // eventually executed, and the io_service runs out of work and exits.
+  // Therefore, there is no need to call serialConn.stop().
 
   // Wait for all threads in the pool to exit before exiting main().
   serialConn.joinThreads();

@@ -4,7 +4,7 @@
 using boost::asio::ip::tcp;
 
 int main(int argc, char* argv[]) {
-  const int N = 69;
+  const int M = 1000;
 
   boost::asio::io_service io_service;
 
@@ -19,6 +19,5 @@ int main(int argc, char* argv[]) {
   for (int i = 0; i < data.size(); ++i) data[i] = i + 1;
   boost::asio::write(s, boost::asio::buffer(data, N * sizeof(double)));
 
-  while(1) {}
   return 0;
 }

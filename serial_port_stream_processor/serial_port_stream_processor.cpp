@@ -181,6 +181,10 @@ class SerialConnection {
                                          &io_service_));
   }
 
+  void stop() {
+    io_service_.stop();
+  }
+
   void joinThreads() {
     threads_.join_all();
   }
@@ -230,14 +234,15 @@ int main(int argc, char* argv[]) {
   // This is the baud rate from yoggy
   const int baudRate = 115200;
   // I set this small for testing, for spectral analysis this may be large
-  const std::size_t N = 32;
+  const std::size_t N = 64;
   // Construct the SerialConnection, which initiates the connection
   SerialConnection serialConn(portName, baudRate, N);
   // Run the io_service on the pool of threads
   serialConn.run(numThreads);
 
   // At this point the main thread is free to execute whatever it wants,
-  // including possibly entering into a UI event loop.
+  // including possibly entering into a UI event loop. When it is time 
+  // to stop the application, call serialConn.stop();
   
   // Wait for all threads in the pool to exit before exiting main().
   serialConn.joinThreads();
