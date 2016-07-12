@@ -1,8 +1,6 @@
 # asio-examples
 
-If you are reading this, I hope these examples are useful for you. If you have feedback and/or questions, please send me an email at:
-
-alanchao8@gmail.com
+If you are reading this, I hope these examples are useful for you. If you have feedback and/or questions, please use the issue tracker here to send me a message.
 
 Best,
 
