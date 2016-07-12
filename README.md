@@ -5,6 +5,7 @@
 ### serial_port_stream_processor: 
 
 This example is a mashup of code from:
+
 1. http://stackoverflow.com/questions/38256712/c-semaphore-confusion,
 2. https://gist.github.com/yoggy/3323808 (from which I believe the SO question code is derived), and 
 3. http://www.boost.org/doc/libs/1_61_0/doc/html/boost_asio/examples/cpp03_examples.html, the (multi-threaded) http server 3 example.
